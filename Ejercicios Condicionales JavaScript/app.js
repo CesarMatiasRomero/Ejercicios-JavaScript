@@ -10,3 +10,14 @@ Solicitar al usuario una letra y una cadena de texto e indicar si contiene la le
 Solicitar un texto y mostrarlo todo menos la primera letra.
 Solicitar al usuario que ingrese su nombre en minúscula y mostrarlo con la primera letra mayúscula.
 */
+
+let texto = prompt("Ingrese un texto que contenga la letra 'A'");
+
+if( texto => 1){
+    alert("¡Excelente!")
+}
+
+
+else(texto = 0){
+    alert("ERROR el caracter solicitado no se encuentra")
+}

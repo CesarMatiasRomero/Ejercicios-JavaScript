@@ -80,23 +80,53 @@ let base = prompt("Ingresa la medida de la base");
 let altura = prompt("Ingresa la medida de la altura");
 let area = (parseFloat(base)*parseFloat(altura))/2;
 alert("El area del triángulo equilatero es: "+area);
-*/
+
 
 // Solicitar al usuario un monto y un número de descuento. Mostrar al usuario cuánto es el precio final con el descuento aplicado.
 let monto = prompt("Ingresa un monto de dinero");
 let descuento = prompt("Ingresa el descuento en % que se le realizara a tu compra");
-let precioFinal = parseFloat(monto)
+descuento =  parseFloat(monto)*parseFloat(descuento) /100;
+let precioFinal = parseFloat(monto)-parseFloat(descuento);
+alert("Precio final: " +precioFinal);
+
+
+
+// Solicitar al usuario su nombre y la edad que cumple o cumplió en 2021, y mostrar un mensaje con alert diciendo "Hola (nombre) usted nació en el año (año)"
+
+let nombre = prompt("Ingrese su nombre");
+let edad = prompt("¿Que edad cumple o cumplió este año?");
+let ano = 2021;
+let anoNaci = ano-parseFloat(edad);
+alert("Hola, " + nombre + " usted nació en el año " +anoNaci);
+
+
+
+// Crear un conversor de Celsius a Farenheit. Solicitar al usuario su nombre y una temperatura y mostrar por alert su equivalente en Farenheit junto con un mensaje que incluya ambos datos. 
+
+alert("Conversor de grados Celsius a Farenheit");
+let nombre = prompt("Ingrese su nombre");
+let celsius = prompt("Ingrese una temperatura en ° Celsius");
+let farenheit = parseFloat(celsius)*32;
+alert("Hola, " + nombre + " sus grados Celsius son " + farenheit + " grados Farenheit");
+*/
+
+
+
+
+// Realizar el mismo ejercicio que el anterior pero al revés, de Farenheit a Celsius.
+
+
+alert("Conversor de grados Farenheit a Celsius");
+let nombre = prompt("Ingrese su nombre");
+let farenheit = prompt("Ingrese una temperatura en ° Farenheit");
+let celsius = parseFloat(farenheit)/17.78;
+alert("Hola, " + nombre + " sus grados Celsius son " + celsius + " grados Farenheit");
+
 
 
 
 
 /*
-// Solicitar al usuario su nombre y la edad que cumple o cumplió en 2021, y mostrar un mensaje con alert diciendo "Hola (nombre) usted nació en el año (año)"
-
-// Crear un conversor de Celsius a Farenheit. Solicitar al usuario su nombre y una temperatura y mostrar por alert su equivalente en Farenheit junto con un mensaje que incluya ambos datos. 
-
-// Realizar el mismo ejercicio que el anterior pero al revés, de Farenheit a Celsius.
-
 // Solicitar al usuario un número y almacenarlo en una variable. Sumarle 5 , multiplicar el resultado por 10 y sacar el resto de su división por 3. Mostrar el resultado sin comas.
 
 
